@@ -12,6 +12,40 @@
       color: #222;
     }
 
+    /* Government of Canada Header */
+    .gov-header {
+      background-color: #000;
+      color: white;
+      padding: 8px 0;
+    }
+
+    .gov-header .container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .gov-header .left {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .gov-header .left img {
+      height: 25px;
+      filter: brightness(0) invert(1); /* make logo white */
+    }
+
+    .gov-header .right a {
+      color: white;
+      text-decoration: none;
+      font-size: 14px;
+      margin: 0 10px;
+    }
+
+    /* Navigation Bar */
     .navbar {
       background-color: #005ea5;
       padding: 10px 0;
@@ -55,61 +89,17 @@
       margin-top: 10px;
       font-weight: bold;
     }
-
-    /* GOV HEADER STYLING */
-    .gc-header {
-      background-color: #000;
-      color: white;
-      padding: 5px 0;
-    }
-
-    .gc-header .inner {
-      max-width: 1200px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-
-    .gc-header .left {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-    }
-
-    .gc-header img {
-      height: 25px;
-      filter: brightness(0) invert(1); /* Make flag white */
-    }
-
-    .gc-header .gov-text {
-      font-size: 14px;
-      color: white;
-      font-weight: bold;
-    }
-
-    .gc-header .links a {
-      color: white;
-      text-decoration: none;
-      margin: 0 10px;
-      font-size: 14px;
-    }
-
-    .gc-header .links a:first-child {
-      margin-left: 0;
-    }
   </style>
 </head>
 <body>
 
-  <!-- Government of Canada Header (Single bilingual instance) -->
-  <div class="gc-header">
-    <div class="inner">
+  <!-- GOV OF CANADA HEADER -->
+  <div class="gov-header">
+    <div class="container">
       <div class="left">
         <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
-        <div class="gov-text">Government of Canada / Gouvernement du Canada</div>
       </div>
-      <div class="links">
+      <div class="right">
         <a href="https://www.canada.ca/en.html">Canada.ca</a> |
         <a href="https://www.canada.ca/en/services.html">Services</a> |
         <a href="https://www.canada.ca/en/government/dept.html">Departments</a> |
@@ -151,5 +141,6 @@
       <p>Learn how to respond and recover after falling for a scam.</p>
     </div>
   </div>
+
 </body>
 </html>
