@@ -15,15 +15,26 @@
       padding: 10px 20px;
       font-family: Arial, sans-serif;
     }
+    .gc-header .left {
+      display: flex;
+      align-items: center;
+    }
     .gc-header img {
       height: 40px;
+      filter: brightness(0) invert(1); /* Make the flag white */
       margin-right: 15px;
+    }
+    .gc-header .text-group {
+      display: flex;
+      gap: 40px;
+      align-items: center;
     }
     .gc-header .text {
       display: flex;
       flex-direction: column;
       font-size: 14px;
       color: white;
+      line-height: 1.2;
     }
     .gc-header .links {
       font-size: 14px;
@@ -85,62 +96,10 @@
 
   <!-- Government of Canada header -->
   <div class="gc-header">
-    <div style="display: flex; align-items: center;">
-      <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
-      <div class="text">
-        <strong>Government</strong>
-        <span>of Canada</span>
-      </div>
-      <div class="text" style="margin-left: 40px;">
-        <strong>Gouvernement</strong>
-        <span>du Canada</span>
-      </div>
-    </div>
-    <div class="links">
-      <a href="#">Canada.ca</a> |
-      <a href="#">Services</a> |
-      <a href="#">Departments</a> |
-      <a href="#">Français</a>
-    </div>
-  </div>
-
-  <!-- Site Navigation -->
-  <nav>
-    <a href="#">Browse Scams</a>
-    <a href="#">Protect Yourself</a>
-    <a href="#">Report Fraud</a>
-    <a href="#">If You're a Victim</a>
-    <a href="#">Français</a>
-  </nav>
-
-  <!-- Main Content -->
-  <div class="container">
-    <h1>AntiFraude NS</h1>
-    <p><em>Community-led Reporting for Scams & Fraud in Nova Scotia</em></p>
-
-    <p><a href="#">Browse Scams</a> <a href="#">Protect Yourself</a> <a href="#">Report Fraud</a> <a href="#">If You're a Victim</a> <a href="#">Français</a></p>
-
-    <h2>Report Scams & Fraud in Nova Scotia</h2>
-    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes affecting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#">report it now</a>.</p>
-
-    <h2>Quick Access</h2>
-
-    <h3>Types of Scams</h3>
-    <p>View scams by category, delivery method, or target audience.</p>
-
-    <h3>Protect Yourself</h3>
-    <p>Tips and advice to stay safe and prevent fraud.</p>
-
-    <h3>Report Fraud</h3>
-    <p>Use our secure form to submit a scam or fraud report.</p>
-
-    <h3>If You're a Victim</h3>
-    <p>Learn how to respond and recover after falling for a scam.</p>
-  </div>
-
-  <footer>
-    &copy; 2025 AntiFraude NS. All rights reserved.
-  </footer>
-
-</body>
-</html>
+    <div class="left">
+      <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-eng-white.svg" alt="Government of Canada">
+      <div class="text-group">
+        <div class="text">
+          <strong>Government</strong>
+          <span>of Canada</span>
+        </div>
