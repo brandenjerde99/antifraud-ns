@@ -1,76 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-	<title>Canadian Anti-Fraud Centre</title>
-	<meta content="width=device-width,initial-scale=1" name="viewport">
-	<meta name="description" content="">
-	<meta name="dcterms.title" content="Canadian Anti-Fraud Centre">
-	<meta name="dcterms.creator" content="Government of Canada, Royal Canadian Mounted Police">
-	<meta name="dcterms.issued" title="W3CDTF" content="2019-12-27">
-	<meta name="dcterms.modified" title="W3CDTF" content="2025-06-27">
-	<meta name="dcterms.subject" title="scheme" content="">
-	<meta name="dcterms.language" title="ISO639-2" content="eng">
-	<!--[if gte IE 9 | !IE ]><!-->
-	<link href="tpl-mdl/theme-gcwu-fegc/assets/favicon.ico" rel="icon" type="image/x-icon">
-	<link rel="stylesheet" href="tpl-mdl/theme-gcwu-fegc/css/theme.min.css">
-	<link rel="stylesheet" href="tpl-mdl/css/xtra.min.css">
-	<!--<![endif]-->
-	<!--[if lt IE 9]>
-<link src="tpl-mdl/theme-gcwu-fegc/assets/favicon.ico" rel="shortcut icon">
-<link rel="stylesheet" src="tpl-mdl/theme-gcwu-fegc/css/ie8-theme.min.css">
-<link rel="stylesheet" src="tpl-mdl/css/xtra.min.css">>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="tpl-mdl/wet-boew/js/ie8-wet-boew.min.js"></script>
-<![endif]-->
-	<noscript>
-		<link rel="stylesheet" href="tpl-mdl/wet-boew/css/noscript.min.css">
-	</noscript>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AntiFraude NS - Report Scams & Fraud in Nova Scotia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      color: #222;
+    }
+    header {
+      background-color: #2b3e50;
+      color: white;
+      padding: 20px;
+      background-image: url('https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg');
+      background-repeat: no-repeat;
+      background-position: right 20px center;
+      background-size: 120px;
+    }
+    header h1 {
+      margin: 0;
+    }
+    nav {
+      background-color: #405d77;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 20px;
+    }
+    h2 {
+      color: #2b3e50;
+      margin-top: 40px;
+    }
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .card {
+      flex: 1 1 30%;
+      background-color: white;
+      padding: 20px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      color: #005ea5;
     }
     footer {
-      background: #003366;
+      background-color: #2b3e50;
       color: white;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      padding: 20px;
+      margin-top: 40px;
+    }
+    a.button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 12px;
+      background-color: #005ea5;
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>AntiFraude NS</h1>
-    <p>Report Scams & Fraud in Nova Scotia</p>
+    <p>Community-led Reporting for Scams & Fraud in Nova Scotia</p>
   </header>
-
   <nav>
-    <a href="#">Browse Scams</a>
-    <a href="#">Protect Yourself</a>
-    <a href="#">Report Fraud</a>
-    <a href="#">If You're a Victim</a>
-    <a href="#">Français</a>
+    <a href="#scams">Browse Scams</a>
+    <a href="#protect">Protect Yourself</a>
+    <a href="report.html">Report Fraud</a>
+    <a href="#victim">If You're a Victim</a>
+    <a href="#fr">Français</a>
   </nav>
 
-  <main>
-    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes impacting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#" style="color:#005599">report it now</a>.</p>
+  <div class="container">
+    <h2>Report Scams & Fraud in Nova Scotia</h2>
+    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes affecting residents of Nova Scotia. If you think you're a victim of fraud, <a href="report.html">report it now</a>.</p>
 
     <h2>Quick Access</h2>
-    <div class="quick-links">
-      <a href="#">Types of Scams</a>
-      <p>View scams by category, delivery method, or target audience.</p>
-
-      <a href="#">Protect Yourself</a>
-      <p>Tips and advice to stay safe and prevent fraud.</p>
-
-      <a href="#">Report Fraud</a>
-      <p>Use our secure form to submit a scam or fraud report.</p>
-
-      <a href="#">If You're a Victim</a>
-      <p>Learn how to respond and recover after falling for a scam.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Types of Scams</h3>
+        <p>View scams by category, delivery method, or target audience.</p>
+        <a href="#scams" class="button">Explore</a>
+      </div>
+      <div class="card">
+        <h3>Protect Yourself</h3>
+        <p>Tips and advice to stay safe and prevent fraud.</p>
+        <a href="#protect" class="button">Learn More</a>
+      </div>
+      <div class="card">
+        <h3>Report Fraud</h3>
+        <p>Use our secure form to submit a scam or fraud report.</p>
+        <a href="report.html" class="button">Report Now</a>
+      </div>
+      <div class="card">
+        <h3>If You're a Victim</h3>
+        <p>Learn how to respond and recover after falling for a scam.</p>
+        <a href="#victim" class="button">Support</a>
+      </div>
     </div>
-  </main>
+  </div>
 
   <footer>
-    <p>&copy; 2025 AntiFraude NS. All rights reserved.</p>
+    <p>&copy; 2025 AntiFraude NS. Community-built for Nova Scotia residents. | <a href="mailto:support@antifraude-ns.tech" style="color:white;">Contact us</a></p>
   </footer>
 </body>
 </html>
