@@ -5,9 +5,38 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AntiFraude NS</title>
   <style>
-    header h1 { margin: 0; }
+    /* Header bar - Government of Canada */
+    .gc-header {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
+    }
+    .gc-header img {
+      height: 40px;
+      margin-right: 15px;
+    }
+    .gc-header .text {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: white;
+    }
+    .gc-header .links {
+      font-size: 14px;
+    }
+    .gc-header .links a {
+      color: white;
+      text-decoration: none;
+      margin-left: 15px;
+    }
+
+    /* AntiFraude NS navigation */
     nav {
-      background-color: #405d77;
+      background-color: #2b3e50;
       padding: 10px 20px;
     }
     nav a {
@@ -16,30 +45,33 @@
       text-decoration: none;
       font-weight: bold;
     }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
+    }
+
     .container {
       max-width: 1100px;
       margin: auto;
       padding: 20px;
     }
+
+    h1 {
+      color: #222;
+    }
+
     h2 {
       color: #2b3e50;
       margin-top: 40px;
     }
-    .cards {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-    }
-    .card {
-      flex: 1 1 30%;
-      background-color: white;
-      padding: 20px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    }
-    .card h3 {
-      margin-top: 0;
+
+    a {
       color: #005ea5;
     }
+
     footer {
       background-color: #2b3e50;
       color: white;
@@ -47,47 +79,32 @@
       padding: 20px;
       margin-top: 40px;
     }
-    a.button {
-      display: inline-block;
-      margin-top: 10px;
-      padding: 8px 12px;
-      background-color: #005ea5;
-      color: white;
-      text-decoration: none;
-      border-radius: 4px;
-    }
-
-    /* ✅ Added: Flag and Government Text Style */
-    .canada-header {
-      display: flex;
-      align-items: center;
-      background-color: black;
-      padding: 5px 10px;
-    }
-    .canada-header img {
-      height: 40px;
-      margin-right: 10px;
-    }
-    .canada-header span {
-      color: white;
-      font-size: 14px;
-      line-height: 1.2;
-      white-space: pre-line;
-    }
   </style>
 </head>
 <body>
 
-  <!-- ✅ Clean Top Header: Flag + Government Text -->
-  <div class="canada-header">
-    <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Canada Flag">
-    <span>Government<br>of Canada &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Gouvernement<br>du Canada</span>
+  <!-- Government of Canada header -->
+  <div class="gc-header">
+    <div style="display: flex; align-items: center;">
+      <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
+      <div class="text">
+        <strong>Government</strong>
+        <span>of Canada</span>
+      </div>
+      <div class="text" style="margin-left: 40px;">
+        <strong>Gouvernement</strong>
+        <span>du Canada</span>
+      </div>
+    </div>
+    <div class="links">
+      <a href="#">Canada.ca</a> |
+      <a href="#">Services</a> |
+      <a href="#">Departments</a> |
+      <a href="#">Français</a>
+    </div>
   </div>
 
-  <!-- Main Page Content Starts -->
-  <h1>AntiFraude NS</h1>
-  <p>Community-led Reporting for Scams & Fraud in Nova Scotia</p>
-
+  <!-- Site Navigation -->
   <nav>
     <a href="#">Browse Scams</a>
     <a href="#">Protect Yourself</a>
@@ -96,9 +113,15 @@
     <a href="#">Français</a>
   </nav>
 
+  <!-- Main Content -->
   <div class="container">
+    <h1>AntiFraude NS</h1>
+    <p><em>Community-led Reporting for Scams & Fraud in Nova Scotia</em></p>
+
+    <p><a href="#">Browse Scams</a> <a href="#">Protect Yourself</a> <a href="#">Report Fraud</a> <a href="#">If You're a Victim</a> <a href="#">Français</a></p>
+
     <h2>Report Scams & Fraud in Nova Scotia</h2>
-    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes impacting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#">report it now</a>.</p>
+    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes affecting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#">report it now</a>.</p>
 
     <h2>Quick Access</h2>
 
