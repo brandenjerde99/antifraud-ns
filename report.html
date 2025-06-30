@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Report a Scam | Antifraude Nova Scotia</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f8fb;
+      color: #222;
+    }
+    header {
+      background-color: #004080;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #003060;
+      text-align: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    main {
+      max-width: 700px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+    h2 {
+      color: #004080;
+    }
+    form {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+      margin-top: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+    button {
+      background-color: #004080;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    button:hover {
+      background-color: #003060;
+    }
+    footer {
+      margin-top: 60px;
+      background: #e1e8f0;
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .note {
+      font-size: 14px;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Antifraude Nova Scotia</h1>
+    <p>Report fraud anonymously. Protect others. Raise awareness.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="report.html">Report</a>
+    <a href="resources.html">Resources</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+    <h2>Submit a Scam Report</h2>
+    <p>Help protect others by reporting scams you’ve encountered. You can stay anonymous. We will never share your identity or email address.</p>
+
+    <form 
+      action="https://formsubmit.co/el/vejaye" 
+      method="POST">
+
+      <!-- Hidden fields -->
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_next" value="https://antifraude-ns.tech/thank-you.html">
+
+      <label for="name">Your Name (optional)</label>
+      <input type="text" id="name" name="name" placeholder="Jane Doe">
+
+      <label for="email">Your Email (optional)</label>
+      <input type="email" id="email" name="email" placeholder="jane@example.com">
+
+      <label for="location">Location in Nova Scotia</label>
+      <input type="text" id="location" name="location" required placeholder="e.g. Halifax, Dartmouth">
+
+      <label for="message">Scam Description</label>
+      <textarea id="message" name="message" rows="6" required placeholder="Describe what happened, how you were approached, and any other important details."></textarea>
+
+      <p class="note">Please don’t include passwords, bank PINs, or sensitive personal data in this form.</p>
+
+      <button type="submit">Submit Report</button>
+    </form>
+  </main>
+
+  <footer>
+    &copy; 2025 Antifraude Nova Scotia. All rights reserved.
+  </footer>
+
+</body>
+</html>
