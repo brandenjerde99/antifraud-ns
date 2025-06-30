@@ -55,24 +55,68 @@
       margin-top: 10px;
       font-weight: bold;
     }
+
+    /* GOV HEADER STYLING */
+    .gc-header {
+      background-color: #000;
+      color: white;
+      padding: 5px 0;
+    }
+
+    .gc-header .inner {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .gc-header .left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .gc-header img {
+      height: 25px;
+      filter: brightness(0) invert(1); /* makes the flag white */
+    }
+
+    .gc-header .gov-text {
+      font-size: 14px;
+      color: white;
+      font-weight: bold;
+    }
+
+    .gc-header .links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .gc-header .links a:first-child {
+      margin-left: 0;
+    }
   </style>
 </head>
 <body>
-  <!-- GOV OF CANADA BLACK HEADER START -->
-  <div style="background-color: #000; color: white; padding: 5px 0;">
-    <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" style="height: 25px;">
+
+  <!-- Government of Canada Header -->
+  <div class="gc-header">
+    <div class="inner">
+      <div class="left">
+        <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
+        <div class="gov-text">Government of Canada / Gouvernement du Canada</div>
       </div>
-      <div style="font-size: 14px;">
-        <a href="https://www.canada.ca/en.html" style="color: white; text-decoration: none; margin-right: 12px;">Canada.ca</a> |
-        <a href="https://www.canada.ca/en/services.html" style="color: white; text-decoration: none; margin: 0 12px;">Services</a> |
-        <a href="https://www.canada.ca/en/government/dept.html" style="color: white; text-decoration: none; margin: 0 12px;">Departments</a> |
-        <a href="#" style="color: white; text-decoration: none; margin-left: 12px;">Français</a>
+      <div class="links">
+        <a href="https://www.canada.ca/en.html">Canada.ca</a> |
+        <a href="https://www.canada.ca/en/services.html">Services</a> |
+        <a href="https://www.canada.ca/en/government/dept.html">Departments</a> |
+        <a href="#">Français</a>
       </div>
     </div>
   </div>
-  <!-- GOV OF CANADA BLACK HEADER END -->
 
   <!-- AntiFraude NS Navigation -->
   <div class="navbar">
