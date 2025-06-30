@@ -12,14 +12,69 @@
       color: #222;
     }
     header {
-      background-color: #2b3e50;
-      color: white;
-      padding: 20px;
-      background-image: url('https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg');
-      background-repeat: no-repeat;
-      background-position: right 20px center;
-      background-size: 120px;
-    }
+     <!-- START: Government of Canada Header Banner -->
+<style>
+  .gc-header {
+    background-color: #000;
+    color: #fff;
+    font-family: Helvetica, Arial, sans-serif;
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+  .gc-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .gc-logo {
+    display: flex;
+    align-items: center;
+  }
+  .gc-logo img {
+    height: 24px;
+    margin-right: 10px;
+  }
+  .gc-logo span {
+    line-height: 1.2;
+  }
+  .gc-links {
+    text-align: right;
+  }
+  .gc-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 1px solid #fff;
+  }
+  .gc-links a:first-child {
+    border-left: none;
+  }
+  .gc-links a:hover {
+    text-decoration: underline;
+  }
+</style>
+
+<div class="gc-header">
+  <div class="container">
+    <div class="gc-logo">
+      <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada logo">
+      <span>
+        Government<br>
+        of Canada
+      </span>
+    </div>
+    <div class="gc-links">
+      <a href="https://www.canada.ca/en.html" target="_blank" rel="noopener">Canada.ca</a>
+      <a href="https://www.canada.ca/en/services.html" target="_blank" rel="noopener">Services</a>
+      <a href="https://www.canada.ca/en/government/dept.html" target="_blank" rel="noopener">Departments</a>
+      <a href="#" lang="fr">Français</a>
+    </div>
+  </div>
+</div>
+<!-- END: Government of Canada Header Banner -->
+
     header h1 {
       margin: 0;
     }
