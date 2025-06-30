@@ -1,33 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AntiFraude NS</title>
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background-color: #f7f7f7;
-      color: #222;
-    }
-
-    .navbar {
-      background-color: #005ea5;
-      padding: 10px 0;
-    }
-
-    .navbar .container {
+    /* Header bar - Government of Canada */
+    .gc-header {
+      background-color: #000;
+      color: white;
       display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 20px;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-family: Arial, sans-serif;
     }
-
-    .navbar a {
+    .gc-header img {
+      height: 40px;
+      margin-right: 15px;
+    }
+    .gc-header .text {
+      display: flex;
+      flex-direction: column;
+      font-size: 14px;
+      color: white;
+    }
+    .gc-header .links {
+      font-size: 14px;
+    }
+    .gc-header .links a {
       color: white;
       text-decoration: none;
+      margin-left: 15px;
+    }
+
+    /* AntiFraude NS navigation */
+    nav {
+      background-color: #2b3e50;
+      padding: 10px 20px;
+    }
+    nav a {
+      color: white;
+      margin-right: 20px;
+      text-decoration: none;
       font-weight: bold;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+      margin: 0;
     }
 
     .container {
@@ -37,8 +60,7 @@
     }
 
     h1 {
-      font-size: 2em;
-      margin-bottom: 10px;
+      color: #222;
     }
 
     h2 {
@@ -50,62 +72,52 @@
       color: #005ea5;
     }
 
-    .quick-access a {
-      display: block;
-      margin-top: 10px;
-      font-weight: bold;
+    footer {
+      background-color: #2b3e50;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
-  <!-- GOV OF CANADA BLACK HEADER START -->
-  <div style="background-color: #000; color: white; padding: 5px 0;">
-    <div style="max-width: 1200px; margin: auto; display: flex; justify-content: space-between; align-items: center;">
-      <div style="display: flex; align-items: center; gap: 10px;">
-        <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada" style="height: 25px;">
-      </div>
-      <div style="font-size: 14px;">
-        <a href="https://www.canada.ca/en.html" style="color: white; text-decoration: none; margin-right: 12px;">Canada.ca</a> |
-        <a href="https://www.canada.ca/en/services.html" style="color: white; text-decoration: none; margin: 0 12px;">Services</a> |
-        <a href="https://www.canada.ca/en/government/dept.html" style="color: white; text-decoration: none; margin: 0 12px;">Departments</a> |
-        <a href="#" style="color: white; text-decoration: none; margin-left: 12px;">Français</a>
-      </div>
-    </div>
-  </div>
-  <!-- GOV OF CANADA BLACK HEADER END -->
 
-  <!-- AntiFraude NS Navigation -->
-  <div class="navbar">
-    <div class="container">
-      <a href="#scams">Browse Scams</a>
-      <a href="#protect">Protect Yourself</a>
-      <a href="#report">Report Fraud</a>
-      <a href="#victim">If You're a Victim</a>
-      <a href="#fr">Français</a>
+  <!-- Government of Canada header -->
+  <div class="gc-header">
+    <div style="display: flex; align-items: center;">
+      <img src="https://www.canada.ca/etc/designs/canada/wet-boew/assets/sig-blk-en.svg" alt="Government of Canada">
+      <div class="text">
+        <strong>Government</strong>
+        <span>of Canada</span>
+      </div>
+      <div class="text" style="margin-left: 40px;">
+        <strong>Gouvernement</strong>
+        <span>du Canada</span>
+      </div>
+    </div>
+    <div class="links">
+      <a href="#">Canada.ca</a> |
+      <a href="#">Services</a> |
+      <a href="#">Departments</a> |
+      <a href="#">Français</a>
     </div>
   </div>
+
+  <!-- Site Navigation -->
+  <nav>
+    <a href="#">Browse Scams</a>
+    <a href="#">Protect Yourself</a>
+    <a href="#">Report Fraud</a>
+    <a href="#">If You're a Victim</a>
+    <a href="#">Français</a>
+  </nav>
 
   <!-- Main Content -->
   <div class="container">
     <h1>AntiFraude NS</h1>
-    <p>Community-led Reporting for Scams & Fraud in Nova Scotia</p>
+    <p><em>Community-led Reporting for Scams & Fraud in Nova Scotia</em></p>
 
-    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes affecting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#report">report it now</a>.</p>
+    <p><a href="#">Browse Scams</a> <a href="#">Protect Yourself</a> <a href="#">Report Fraud</a> <a href="#">If You're a Victim</a> <a href="#">Français</a></p>
 
-    <h2>Quick Access</h2>
-    <div class="quick-access">
-      <a href="#scams">Types of Scams</a>
-      <p>View scams by category, delivery method, or target audience.</p>
-
-      <a href="#protect">Protect Yourself</a>
-      <p>Tips and advice to stay safe and prevent fraud.</p>
-
-      <a href="#report">Report Fraud</a>
-      <p>Use our secure form to submit a scam or fraud report.</p>
-
-      <a href="#victim">If You're a Victim</a>
-      <p>Learn how to respond and recover after falling for a scam.</p>
-    </div>
-  </div>
-</body>
-</html>
+    <h2>Report Scam
