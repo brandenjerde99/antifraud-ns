@@ -1,86 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AntiFraude NS - Nova Scotia Scam Reporting</title>
-  <link rel="stylesheet" href="style/main.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>AntiFraude NS - Report Scams & Fraud</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f3f6f9;
+      color: #333;
+    }
+    header {
+      background: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav {
+      background: #005599;
+      padding: 0.5rem 2rem;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 1rem;
+      font-weight: bold;
+    }
+    main {
+      padding: 2rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+    h2 {
+      color: #003366;
+    }
+    .quick-links a {
+      display: block;
+      font-weight: bold;
+      margin-top: 1rem;
+      color: #005599;
+      text-decoration: none;
+    }
+    .quick-links p {
+      margin-top: 0.25rem;
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
 </head>
-
 <body>
   <header>
-    <div class="container">
-      <h1><a href="index.html">AntiFraude NS</a></h1>
-      <nav>
-        <ul>
-          <li><a href="scams.html">Browse Scams</a></li>
-          <li><a href="protect.html">Protect Yourself</a></li>
-          <li><a href="report.html">Report Fraud</a></li>
-          <li><a href="victim.html">If You're a Victim</a></li>
-          <li><a href="index-fr.html">Français</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>AntiFraude NS</h1>
+    <p>Report Scams & Fraud in Nova Scotia</p>
   </header>
 
-  <main class="container">
-    <section class="intro">
-      <h2>Report Scams & Fraud in Nova Scotia</h2>
-      <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes impacting residents of Nova Scotia. If you think you're a victim of fraud, <a href="report.html">report it now</a>.</p>
-    </section>
+  <nav>
+    <a href="#">Browse Scams</a>
+    <a href="#">Protect Yourself</a>
+    <a href="#">Report Fraud</a>
+    <a href="#">If You're a Victim</a>
+    <a href="#">Français</a>
+  </nav>
 
-    <section class="services">
-      <h2>Quick Access</h2>
-      <div class="grid">
-        <div class="card">
-          <h3><a href="scams.html">Types of Scams</a></h3>
-          <p>View scams by category, delivery method, or target audience.</p>
-        </div>
-        <div class="card">
-          <h3><a href="protect.html">Protect Yourself</a></h3>
-          <p>Tips and advice to stay safe and prevent fraud.</p>
-        </div>
-        <div class="card">
-          <h3><a href="report.html">Report Fraud</a></h3>
-          <p>Use our secure form to submit a scam or fraud report.</p>
-        </div>
-        <div class="card">
-          <h3><a href="victim.html">If You're a Victim</a></h3>
-          <p>Learn how to respond and recover after falling for a scam.</p>
-        </div>
-      </div>
-    </section>
+  <main>
+    <p>AntiFraude NS is a community-led effort to collect and share information about scams, fraud, and financial crimes impacting residents of Nova Scotia. If you think you're a victim of fraud, <a href="#" style="color:#005599">report it now</a>.</p>
 
-    <section class="news">
-      <h2>Recent Fraud Alerts</h2>
-      <ul>
-        <li><a href="#">Fake investment scams targeting Nova Scotians</a> — June 2025</li>
-        <li><a href="#">CRA impersonation calls on the rise</a> — May 2025</li>
-        <li><a href="#">Job offer scams using fake recruiter names</a> — April 2025</li>
-      </ul>
-    </section>
+    <h2>Quick Access</h2>
+    <div class="quick-links">
+      <a href="#">Types of Scams</a>
+      <p>View scams by category, delivery method, or target audience.</p>
 
-    <section class="partners">
-      <h2>Community Resources</h2>
-      <ul>
-        <li><a href="https://www.cyber.gc.ca/">Canadian Centre for Cyber Security</a></li>
-        <li><a href="https://novascotia.ca/consumer-protection/">Nova Scotia Consumer Protection Office</a></li>
-        <li><a href="https://www.rcmp-grc.gc.ca/en/financial-crime">RCMP Financial Crime</a></li>
-      </ul>
-    </section>
+      <a href="#">Protect Yourself</a>
+      <p>Tips and advice to stay safe and prevent fraud.</p>
+
+      <a href="#">Report Fraud</a>
+      <p>Use our secure form to submit a scam or fraud report.</p>
+
+      <a href="#">If You're a Victim</a>
+      <p>Learn how to respond and recover after falling for a scam.</p>
+    </div>
   </main>
 
   <footer>
-    <div class="container">
-      <p>&copy; 2025 AntiFraude NS — A Scam Awareness & Reporting Site for Nova Scotia</p>
-      <ul>
-        <li><a href="terms.html">Terms</a></li>
-        <li><a href="privacy.html">Privacy Policy</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </div>
+    <p>&copy; 2025 AntiFraude NS. All rights reserved.</p>
   </footer>
 </body>
-
 </html>
